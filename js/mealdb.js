@@ -1,3 +1,14 @@
+//for enter button. Enter button work
+const searchBtn = document.getElementById("button-search");
+const searchInput = document.getElementById("search-field");
+
+searchInput.addEventListener("keypress", function (event) {
+    //event.preventDefault();
+    if (event.keyCode == 13) {
+        searchBtn.click();
+    }
+});
+
 const searchFood = () => {
     const searchField = document.getElementById("search-field");
     const searchText = searchField.value;
